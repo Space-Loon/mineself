@@ -1,0 +1,39 @@
+#DOMAIN,i.snssdk.com,REJECT
+#DOMAIN,i-lq.snssdk.com,REJECT
+#DOMAIN,dig.bdurl.net,REJECT
+
+# 番茄小说章末去广告手动整合
+# 更新时间：2022.11.14
+# zqzess：https://github.com/zqzess/rule_for_quantumultX/blob/6e4b947f005968c72a92308f85bff68d96d19f4f/QuantumultX/rewrite/FanQieNovel.qxrewrite
+# 张   军：https://github.com/fmz200/wool_scripts/blob/3389649112af1cf06d5a02450ca6588e5b9c0d36/QuantumultX/rewrite/chongxie.txt
+^https?:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-app-package\/.+ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/web\.business\.image\/.+ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/package\.json url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/.+\/fallback\.js url reject
+^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package url reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/ad-pattern\/renderer\/package\.json url reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/img-cut-tos\/.+ url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/web\.business\.image\/.+ url reject
+^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 url reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ url reject
+^http:\/\/.+\.byteimg\.com\/ad-app-package url reject
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ url reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4  url reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ url reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+  url reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer url reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg  url reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad  url reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+  url reject
+^http:\/\/.+\.byteimg\.com\/web\.business\.image url reject
+# .+web\.business\.image url reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(ad-app-package|ad)\/.+ url reject
+^https?:\/\/adim\.pinduoduo\.com\/.+\/toutiao\?.+ url reject
+^https?:\/\/v6-novelapp\.fqnovelvod\.com\/.+\/video\/.+ url reject
+
+hostname = *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com,adim.pinduoduo.com,v6-novelapp.fqnovelvod.com
