@@ -1,54 +1,53 @@
 #!name=爱阅书香卡广告
 #!desc=务必关闭其他去广告分流规则
-[Rule]
-# 番茄小说
-DOMAIN,p6-ad-sign.byteimg.com,REJECT
-DOMAIN,p9-ad-sign.byteimg.com,REJECT
-DOMAIN-SUFFIX,byteimg.com,DIRECT
-DOMAIN,i.snssdk.com,REJECT
-DOMAIN,i-lq.snssdk.com,REJECT
-DOMAIN,dig.bdurl.net,REJECT
-DOMAIN-KEYWORD,zijieapi,REJECT
-# DOMAIN,ads3-normal-lq.zijieapi.com,REJECT
-# DOMAIN,ads5-normal-lq.zijieapi.com,REJECT
-# DOMAIN,polaris3-normal-lq.zijieapi.com,REJECT
-DOMAIN,activity-ag.awemeughun.com,REJECT
 
-DOMAIN,mcs.snssdk.com,REJECT
-DOMAIN,tnc3-alisc1.snssdk.com,REJECT
-DOMAIN,security-lq.snssdk.com,REJECT
-DOMAIN,tnc3-aliec2.snssdk.com,REJECT
-DOMAIN,is.snssdk.com,REJECT
+DOMAIN,p6-ad-sign.byteimg.com
+DOMAIN,p9-ad-sign.byteimg.com
+DOMAIN-SUFFIX,byteimg.com
+DOMAIN,i.snssdk.com
+DOMAIN,i-lq.snssdk.com
+DOMAIN,dig.bdurl.net,
+DOMAIN-KEYWORD,zijieapi
+# DOMAIN,ads3-normal-lq.zijieapi.com
+# DOMAIN,ads5-normal-lq.zijieapi.com
+# DOMAIN,polaris3-normal-lq.zijieapi.com
+DOMAIN,activity-ag.awemeughun.com
 
-DOMAIN,msync-im1-vip6-std.easemob.com,REJECT
+DOMAIN,mcs.snssdk.com
+DOMAIN,tnc3-alisc1.snssdk.com
+DOMAIN,security-lq.snssdk.com
+DOMAIN,tnc3-aliec2.snssdk.com
+DOMAIN,is.snssdk.com
 
-DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net,REJECT
-DOMAIN,api.iegadp.qq.com,REJECT
+DOMAIN,msync-im1-vip6-std.easemob.com
 
-DOMAIN,sf3-ttcdn-tos.pstatp.com,REJECT
-DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
-# DOMAIN,p3-be-pack-sign.pglstatp-toutiao.com,REJECT
-# DOMAIN,sf3-be-pack.pglstatp-toutiao.com,REJECT
+DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN,api.iegadp.qq.com
 
-DOMAIN,*default.ixigua.com,REJECT
-DOMAIN,v6-novelapp.ixigua.com,REJECT
-DOMAIN,*novelapp.ixigua.com,REJECT
-# DOMAIN,v3-default.ixigua.com,REJECT
-# DOMAIN,v9-default.ixigua.com,REJECT
-# DOMAIN,v6-default.ixigua.com,REJECT
+DOMAIN,sf3-ttcdn-tos.pstatp.com
+DOMAIN-SUFFIX,pglstatp-toutiao.com
+# DOMAIN,p3-be-pack-sign.pglstatp-toutiao.com
+# DOMAIN,sf3-be-pack.pglstatp-toutiao.com
 
-DOMAIN-SUFFIX,byteorge.com,REJECT
-DOMAIN-SUFFIX,bytegoofy.com,REJECT
-DOMAIN-SUFFIX,bytedance.com,REJECT
+DOMAIN,*default.ixigua.com
+DOMAIN,v6-novelapp.ixigua.com
+DOMAIN,*novelapp.ixigua.com
+# DOMAIN,v3-default.ixigua.com
+# DOMAIN,v9-default.ixigua.com
+# DOMAIN,v6-default.ixigua.com
 
-IP-CIDR,49.71.37.101/32,REJECT,no-resolve
-IP-CIDR,117.71.105.23/32,REJECT,no-resolve
-IP-CIDR,218.94.207.205/32,REJECT,no-resolve
-IP-CIDR,117.92.229.188/32,REJECT,no-resolve
-IP-CIDR,101.36.166.16/32,REJECT,no-resolve
-IP-CIDR,180.96.2.114/32,REJECT,no-resolve
+DOMAIN-SUFFIX,byteorge.com
+DOMAIN-SUFFIX,bytegoofy.com
+DOMAIN-SUFFIX,bytedance.com
 
-URL-REGEX,*-default.ixigua.com,REJECT
-# URL-REGEX,.+web\.business\.image,REJECT
-URL-REGEX,^http:\/\/.+\.byteimg\.com\/ad-app-package,REJECT
-URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image,REJECT
+IP-CIDR,49.71.37.101/32
+IP-CIDR,117.71.105.23/32
+IP-CIDR,218.94.207.205/32
+IP-CIDR,117.92.229.188/32
+IP-CIDR,101.36.166.16/32
+IP-CIDR,180.96.2.114/32
+
+URL-REGEX,*-default.ixigua.com
+# URL-REGEX,.+web\.business\.image
+URL-REGEX,^http:\/\/.+\.byteimg\.com\/ad-app-package
+URL-REGEX,^http:\/\/.+\.byteimg\.com\/web\.business\.image
