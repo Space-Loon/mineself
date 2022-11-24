@@ -1,5 +1,5 @@
-#!爱阅书香卡广告
-#!Surge新建一个空白配置使用，记得打开Mimt
+#!name=爱阅书香卡广告
+#!desc=Surge新建一个空白配置使用，记得打开Mimt
 [Rule]
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT // v6-be-pack.
 DOMAIN,novelapi.baidu.com,REJECT // Added for: novelapi.baidu.com:443
