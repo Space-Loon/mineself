@@ -19,4 +19,4 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 ^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.mp4\?.+ - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
 [MITM]
-hostname = *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com
+hostname = *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com
