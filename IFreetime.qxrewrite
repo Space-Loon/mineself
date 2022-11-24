@@ -1,8 +1,0 @@
-#注释
-^https?:\/\/.+\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/.+ url reject
-^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.mp4\?.+ url reject
-^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image url reject
-
-
-
-hostname = *.ugdtimg.com,*.pglstatp-toutiao.com
