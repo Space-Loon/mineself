@@ -2,14 +2,15 @@
 #!desc=Surge新建一个空白配置使用，记得打开Mimt
 
 [Rule]
-DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT // v6-be-pack.
-DOMAIN,novelapi.baidu.com,REJECT // Added for: novelapi.baidu.com:443
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN,novelapi.baidu.com,REJECT
 DOMAIN-SUFFIX,app-measurement.com,REJECT
-DOMAIN,v.gdt.qq.com,REJECT // Added for: v.gdt.qq.com:443
-URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT // Added for: https://alogs.umengcloud.com/app_logs
+DOMAIN,v.gdt.qq.com,REJECT
+URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
-# URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT // Added for: https://alogs.umeng.com/app_logs
+DOMAIN-SUFFIX,pinduoduo.com,REJECT
+# URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT
 # DOMAIN-SUFFIX,umeng.com,REJECT
 # DOMAIN,v3-be-pack.pglstatp-toutiao.com,REJECT
 
@@ -22,4 +23,4 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ -reject
 
 [MITM]
-hostname = *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com
+hostname = *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
