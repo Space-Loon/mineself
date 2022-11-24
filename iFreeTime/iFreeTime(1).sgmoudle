@@ -1,0 +1,21 @@
+#!name=爱阅书香卡广告
+#!desc=Surge新建一个空白配置使用，记得打开Mimt
+
+[Rule]
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT // v6-be-pack.
+DOMAIN,novelapi.baidu.com,REJECT // Added for: novelapi.baidu.com:443
+DOMAIN-SUFFIX,app-measurement.com,REJECT
+# DOMAIN,v.gdt.qq.com,REJECT // Added for: v.gdt.qq.com:443
+# URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT // Added for: https://alogs.umengcloud.com/app_logs
+# URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT // Added for: https://alogs.umeng.com/app_logs
+# DOMAIN-SUFFIX,umeng.com,REJECT
+# DOMAIN,v3-be-pack.pglstatp-toutiao.com,REJECT
+
+[URL Rewrite]
+^https?:\/\/.+\.ugdtimg\.com\/gdt\/0\/.+\.png - reject
+^https?:\/\/.+\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/.+ - reject
+^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.mp4\?.+ - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
+
+[MITM]
+hostname = *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com
