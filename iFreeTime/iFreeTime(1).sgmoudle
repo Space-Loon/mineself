@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,app-measurement.com,REJECT
 DOMAIN,v.gdt.qq.com,REJECT // Added for: v.gdt.qq.com:443
 URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT // Added for: https://alogs.umengcloud.com/app_logs
 DOMAIN-SUFFIX,shenbabao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 # URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT // Added for: https://alogs.umeng.com/app_logs
 # DOMAIN-SUFFIX,umeng.com,REJECT
 # DOMAIN,v3-be-pack.pglstatp-toutiao.com,REJECT
