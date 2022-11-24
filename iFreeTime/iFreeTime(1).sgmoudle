@@ -15,11 +15,11 @@ DOMAIN-SUFFIX,pinduoduo.com,REJECT
 # DOMAIN,v3-be-pack.pglstatp-toutiao.com,REJECT
 
 [URL Rewrite]
-^https?:\/\/.+\.ugdtimg\.com\/gdt\/0\/.+\.(png|jpeg|jpg) - reject
+^https?:\/\/.+\.ugdtimg\.com\/gdt\/0\/.+\.(png|jpeg|jpg|mp4) - reject
 ^https?:\/\/.+\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/.+ - reject
-^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.mp4\?.+ - reject
+^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.(png|jpeg|jpg|mp4)\?.+ - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
-^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(jpeg|jpg|png) - reject
+^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ -reject
 
 [MITM]
