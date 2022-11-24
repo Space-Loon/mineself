@@ -8,6 +8,8 @@ DOMAIN-SUFFIX,app-measurement.com,REJECT
 DOMAIN,v.gdt.qq.com,REJECT
 URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
+
+# DOMAIN-KEYWORD,umeng,REJECT
 # DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 # DOMAIN-SUFFIX,pinduoduo.com,REJECT
 # URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT
@@ -20,7 +22,8 @@ DOMAIN-SUFFIX,shenbabao.com,REJECT
 ^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.(png|jpeg|jpg|mp4)\?.+ - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
 ^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
-^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ -reject
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ - reject
+^https?:\/\/alogs\.umeng\.com\/app_logs - reject
 
 [MITM]
 hostname = *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
