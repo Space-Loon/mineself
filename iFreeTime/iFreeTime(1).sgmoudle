@@ -8,8 +8,8 @@ DOMAIN-SUFFIX,app-measurement.com,REJECT
 DOMAIN,v.gdt.qq.com,REJECT
 URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
-DOMAIN-SUFFIX,pinduoduo.com,REJECT
+# DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+# DOMAIN-SUFFIX,pinduoduo.com,REJECT
 # URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT
 # DOMAIN-SUFFIX,umeng.com,REJECT
 # DOMAIN,v3-be-pack.pglstatp-toutiao.com,REJECT
@@ -19,7 +19,7 @@ DOMAIN-SUFFIX,pinduoduo.com,REJECT
 ^https?:\/\/.+\.ugdtimg\.com\/141\/20204\/snscosdownload\/SZ\/reserved\/.+ - reject
 ^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.(png|jpeg|jpg|mp4)\?.+ - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
-# ^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
+^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ -reject
 
 [MITM]
