@@ -1,5 +1,5 @@
 #!name=爱阅书香卡广告
-#!desc=Surge新建一个空白配置使用，记得打开MITM
+#!desc=Surge新建一个空白配置使用,记得打开MITM,适配:Surge、Loon、小火箭
 
 [Rule]
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
