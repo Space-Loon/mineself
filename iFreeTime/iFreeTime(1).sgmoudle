@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,shenbabao.com,REJECT
 ^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ - reject
 ^https?:\/\/alogs\.umeng\.com\/app_logs - reject
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/\?.+ - reject
 
 [MITM]
 hostname = *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
