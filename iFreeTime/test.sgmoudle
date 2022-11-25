@@ -5,18 +5,31 @@
 
 
 [URL Rewrite]
+# Umeng
+^https?:\/\/alogs\.(umeng|umengcloud)\.com\/app_logs - reject
+
+# toutiao
+^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/package\.json\?.+ - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/.+\/.+\.js - reject
+
+# pinduoduo
+^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
+
+# google
+^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
+^https:\/\/.+\.googleadservices\.com\/pagead\/adview\?.+ -reject
+
+# Unknow
+^https?:\/\/.+\.gdtimg\.com\/union\/res\/union_temp_v2\/page\/ANTempMob\/tempMob\..+\.package\.json -reject
 ^https?:\/\/.+\.ugdtimg\.com\/gdt\/0\/.+\.(png|jpeg|jpg|mp4) - reject
 ^https?:\/\/.+\.ugdtimg\.com\/141\/20204\/snscosdownload\/.+\/reserved\/.+ - reject
 ^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.(png|jpeg|jpg|mp4)\?.+ - reject
-^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
-^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
-^https?:\/\/alogs\.(umeng|umengcloud)\.com\/app_logs - reject
-^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/.+ - reject
-^https?:\/\/.+\.pangolin-sdk-toutiao.+ - reject
-^https?\/\/.+\.gdtimg\.com\/union\/res\/.+ - reject
 
+# ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/.+ - reject
 # ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ - reject
 # ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/\?.+ - reject
 
+
 [MITM]
-hostname = %APPEND% *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
+hostname = %APPEND% *.googleadservices.com,*.doubleclick.net,*.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
