@@ -6,4 +6,4 @@
 
 第二版 iFreeTime_v1
 
-第三版 iFreeTime_v1.0(目前最新版)
+第三版 iFreeTime_v1.0   (目前最新版)
