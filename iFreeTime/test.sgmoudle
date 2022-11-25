@@ -39,7 +39,7 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 
 # google
 # ^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
-# ^https?:\/\/.+\.googleadservices\.com\/pagead\/.+\?.+ -reject
+# ^https?:\/\/.+\.googleadservices\.com\/pagead\/.+\?.+ - reject
 # ^https?:\/\/.+\.googleapis-cn\.com\/v4\/threatListUpdates:fetch\?.+ - reject
 
 # QQ
@@ -49,7 +49,7 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 
 
 # Unknow
-# ^https?:\/\/.+\.gdtimg\.com\/union\/res\/union_temp_v2\/page\/ANTempMob\/tempMob\..+\.package\.json -reject
+# ^https?:\/\/.+\.gdtimg\.com\/union\/res\/union_temp_v2\/page\/ANTempMob\/tempMob\..+\.package\.json - reject
 # ^https?:\/\/.+\.ugdtimg\.com\/gdt\/0\/.+\.(png|jpeg|jpg|mp4) - reject
 # ^https?:\/\/.+\.ugdtimg\.com\/141\/20204\/snscosdownload\/.+\/reserved\/.+ - reject
 # ^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.(png|jpeg|jpg|mp4)\?.+ - reject
