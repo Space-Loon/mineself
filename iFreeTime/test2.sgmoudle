@@ -8,6 +8,7 @@ DOMAIN-SUFFIX,app-measurement.com,REJECT
 DOMAIN,v.gdt.qq.com,REJECT
 URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
+DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 
 # DOMAIN-KEYWORD,umeng,REJECT
 # DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
