@@ -2,7 +2,22 @@
 #!desc=Surge新建一个空白配置使用,记得打开MITM,适配:Surge、Loon、小火箭
 
 [Rule]
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN,novelapi.baidu.com,REJECT
+DOMAIN-SUFFIX,app-measurement.com,REJECT
+DOMAIN-SUFFIX,shenbabao.com,REJECT
+DOMAIN-SUFFIX,gdtimg.com,REJECT
+DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 
+# DOMAIN-SUFFIX,qq.com,REJECT
+# DOMAIN-SUFFIX,doubleclick.net,REJECT
+# URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT
+# DOMAIN-KEYWORD,umeng,REJECT
+# DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+# DOMAIN-SUFFIX,pinduoduo.com,REJECT
+# URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT
+# DOMAIN-SUFFIX,umeng.com,REJECT
+# DOMAIN,v3-be-pack.pglstatp-toutiao.com,REJECT
 
 [URL Rewrite]
 # Umeng
