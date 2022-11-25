@@ -7,6 +7,7 @@ DOMAIN,novelapi.baidu.com,REJECT
 DOMAIN-SUFFIX,app-measurement.com,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
 DOMAIN-SUFFIX,gdtimg.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 # DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 
 # DOMAIN-SUFFIX,qq.com,REJECT
