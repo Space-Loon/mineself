@@ -31,4 +31,4 @@ DOMAIN-SUFFIX,gdtimg.com,REJECT
 ^https?:\/\/.+\.pangolin-sdk-toutiao.+ - reject
 
 [MITM]
-hostname = %APPEND%*.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
+hostname = %APPEND% ap?*.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
