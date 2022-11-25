@@ -12,13 +12,18 @@
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/package\.json\?.+ - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/.+\/.+\.js - reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/.+\/video\/tos\/cn\/tos-cn-ve-51-alinc2\/.+\/.+\.mp4 - reject
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/?.+ - reject
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/union\/endcard\/.+\/\?.+ - reject
+^https?:\/\/.+\.pangolin-sdk-toutiao-b\.com\/service\/2\/app_log\/\?.+ - reject
 
 # pinduoduo
 ^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
 
 # google
 ^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
-^https:\/\/.+\.googleadservices\.com\/pagead\/adview\?.+ -reject
+^https?:\/\/.+\.googleadservices\.com\/pagead\/adview\?.+ -reject
+^https?:\/\/.+\.googleapis-cn\.com\/v4\/threatListUpdates:fetch\?.+ - reject
 
 # Unknow
 ^https?:\/\/.+\.gdtimg\.com\/union\/res\/union_temp_v2\/page\/ANTempMob\/tempMob\..+\.package\.json -reject
@@ -30,6 +35,5 @@
 # ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ - reject
 # ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/\?.+ - reject
 
-
 [MITM]
-hostname = %APPEND% *.googleadservices.com,*.doubleclick.net,*.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
+hostname = %APPEND% *.googleapis-cn.com,*.googleadservices.com,*.doubleclick.net,*.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
