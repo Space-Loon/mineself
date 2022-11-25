@@ -33,11 +33,11 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 # pinduoduo
 ^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
 # google
-# ^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
-# ^https?:\/\/.+\.googleadservices\.com\/pagead\/.+\?.+ - reject
+^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
+^https?:\/\/.+\.googleadservices\.com\/pagead\/.+\?.+ - reject
 # ^https?:\/\/.+\.googleapis-cn\.com\/v4\/threatListUpdates:fetch\?.+ - reject
 # QQ
-# ^https?:\/\/.+\.gdt.qq.com\/.+\.fcg\?.+ - reject
+^https?:\/\/.+\.gdt.qq.com\/.+\.fcg\?.+ - reject
 # ^https?:\/\/dp3.qq.com\/attr\?.+ - reject
 # ^https?:\/\/otheve.beacon.qq.com\/.+\/.+\?.+ - reject
 # Unknow
