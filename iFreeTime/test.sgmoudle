@@ -46,7 +46,7 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 # QQ
 ^https?:\/\/.+\.gdt.qq.com\/.+\.fcg\?.+ - reject
 ^https?:\/\/dp3.qq.com\/attr\?.+ - reject
-^https?:\/\/otheve.beacon.qq.com\/.+\/.+\?.+ - reject
+# ^https?:\/\/otheve.beacon.qq.com\/.+\/.+\?.+ - reject
 
 
 # Unknow
