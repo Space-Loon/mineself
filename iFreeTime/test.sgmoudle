@@ -45,7 +45,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 ^https?:\/\/.+\.googleapis-cn\.com\/v4\/threatListUpdates:fetch\?.+ - reject
 
 # QQ
-^https?:\/\/.+\.gdt.qq.com\/.+\.fcg\?.+ - reject
+# ^https?:\/\/.+\.gdt.qq.com\/.+\.fcg\?.+ - reject
 ^https?:\/\/dp3.qq.com\/attr\?.+ - reject
 # ^https?:\/\/otheve.beacon.qq.com\/.+\/.+\?.+ - reject
 
