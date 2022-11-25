@@ -45,4 +45,4 @@
 # ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/\?.+ - reject
 
 [MITM]
-hostname = %APPEND% *.qq.com,*.googleapis-cn.com,*.googleadservices.com,*.doubleclick.net,*.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
+hostname = %APPEND% *.ugdtimg.com,*.qq.com,*.googleapis-cn.com,*.googleadservices.com,*.doubleclick.net,*.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com,*.shenbabao.com,*.pangolin-sdk-toutiao.com,*.pangolin-sdk-toutiao.com,*.pinduoduo.com
