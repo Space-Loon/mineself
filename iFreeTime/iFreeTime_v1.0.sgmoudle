@@ -5,9 +5,10 @@
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN,novelapi.baidu.com,REJECT
 DOMAIN-SUFFIX,app-measurement.com,REJECT
-DOMAIN,qq.com,REJECT
+DOMAIN-SUFFIX,qq.com,REJECT
 # DOMAIN-SUFFIX,doubleclick.net,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
+DOMAIN-SUFFIX,gdtimg.com,REJECT
 
 # URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT
 # DOMAIN-KEYWORD,umeng,REJECT
