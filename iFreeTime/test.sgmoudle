@@ -22,7 +22,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 
 [URL Rewrite]
 # Umeng
-^https?:\/\/alogs\.(umeng|umengcloud)\.com\/app_logs - reject
+# ^https?:\/\/alogs\.(umeng|umengcloud)\.com\/app_logs - reject
 
 # toutiao
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
