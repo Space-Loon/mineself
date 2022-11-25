@@ -26,9 +26,9 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 # toutiao
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/web\.business\.image - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/package\.json\?.+ - reject
-^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/.+\/.+\.js - reject
+# ^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/ad-pattern\/renderer\/.+\/.+\.js - reject
 ^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/.+\/video\/tos\/cn\/.+\/.+\/.+\.mp4 - reject
-^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/union-fe-nc\/endcard\/sdk\/.+\.js\?.+ - reject
+# ^https?:\/\/.+\.pglstatp-toutiao\.com\/obj\/union-fe-nc\/endcard\/sdk\/.+\.js\?.+ - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/?.+ - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/union\/endcard\/.+\/\?.+ - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao-b\.com\/service\/2\/app_log\/\?.+ - reject
