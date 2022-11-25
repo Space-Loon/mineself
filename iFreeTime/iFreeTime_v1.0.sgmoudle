@@ -47,4 +47,4 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 ^https?:\/\/.+\.ugdtimg\.com\/ads_svp_video__.+\.f.+\.(png|jpeg|jpg|mp4)\?.+ - reject
 
 [MITM]
-hostname = *.ugdtimg.com, *.qq.com, *.googleapis-cn.com, *.googleadservices.com, *.doubleclick.net, *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com, *.shenbabao.com, *.pangolin-sdk-toutiao.com, *.pangolin-sdk-toutiao.com, *.pinduoduo.com
+hostname = %APPEND% *.ugdtimg.com, *.qq.com, *.googleapis-cn.com, *.googleadservices.com, *.doubleclick.net, *.umengcloud.com, *.ugdtimg.com, *.pglstatp-toutiao.com, *.umeng.com, *.shenbabao.com, *.pangolin-sdk-toutiao.com, *.pangolin-sdk-toutiao.com, *.pinduoduo.com
