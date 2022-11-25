@@ -32,7 +32,7 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/stats\/batch\/?.+ - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/union\/endcard\/.+\/\?.+ - reject
 ^https?:\/\/.+\.pangolin-sdk-toutiao-b\.com\/service\/2\/app_log\/\?.+ - reject
-# ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/settings\/?.+ - reject
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/settings\/?.+ - reject
 # ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ - reject
 
 # pinduoduo
