@@ -1,6 +1,7 @@
 #!name=爱阅三秒跳广告
 #!desc=卡广告领奖励,更新日期:2022.11.25
 [Rule]
+DOMAIN-SUFFIX,bytedance.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN,novelapi.baidu.com,REJECT
 DOMAIN-SUFFIX,app-measurement.com,REJECT
@@ -35,6 +36,7 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 # google
 ^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
 ^https?:\/\/.+\.googleadservices\.com\/pagead\/.+\?.+ - reject
+^https?:\/\/.+\/doubleclick\.net\/.+ - reject
 # ^https?:\/\/.+\.googleapis-cn\.com\/v4\/threatListUpdates:fetch\?.+ - reject
 # QQ
 ^https?:\/\/.+\.gdt.qq.com\/.+\.fcg\?.+ - reject
