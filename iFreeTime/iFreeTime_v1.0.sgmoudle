@@ -1,5 +1,5 @@
 #!name=爱阅三秒跳广告
-#!desc="卡广告领奖励,请开启MITM或者HTTPS解密(更新日期:2022.11.25)"
+#!desc="卡广告领奖励,请开启MITM或者HTTPS解密(更新日期:2022.11.26)"
 [Rule]
 DOMAIN-SUFFIX,bytedance.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
@@ -11,6 +11,8 @@ DOMAIN-SUFFIX,shenbabao.com,REJECT
 DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 DOMAIN-SUFFIX,umeng.com,REJECT
 DOMAIN-SUFFIX,bytescm.com,REJECT
+DOMAIN-SUFFIX,ctobsnssdk.com,REJECT
+DOMAIN-SUFFIX,snssdk.com,REJECT
 # DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 # DOMAIN-SUFFIX,pinduoduo.com,REJECT
 # URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT
