@@ -41,7 +41,7 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 
 # google
 # ^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
-^https?:\/\/.+\.googleadservices\.com\/pagead\/adview\?.+ -reject
+^https?:\/\/.+\.googleadservices\.com\/pagead\/.+\?.+ -reject
 # ^https?:\/\/.+\.googleapis-cn\.com\/v4\/threatListUpdates:fetch\?.+ - reject
 
 # QQ
