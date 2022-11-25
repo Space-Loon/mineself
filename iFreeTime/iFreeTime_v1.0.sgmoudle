@@ -14,7 +14,6 @@ DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
 # URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT
 # DOMAIN-SUFFIX,umeng.com,REJECT
 # DOMAIN,v3-be-pack.pglstatp-toutiao.com,REJECT
-FINAL,DIRECT
 
 [URL Rewrite]
 # Umeng
