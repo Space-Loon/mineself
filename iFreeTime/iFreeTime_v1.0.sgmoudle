@@ -5,7 +5,7 @@
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
 DOMAIN,novelapi.baidu.com,REJECT
 DOMAIN-SUFFIX,app-measurement.com,REJECT
-DOMAIN,v.gdt.qq.com,REJECT
+DOMAIN,qq.com,REJECT
 # DOMAIN-SUFFIX,doubleclick.net,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
 
