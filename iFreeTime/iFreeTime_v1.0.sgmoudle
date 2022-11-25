@@ -9,7 +9,7 @@ DOMAIN,v.gdt.qq.com,REJECT
 URL-REGEX,^https:\/\/alogs\.umengcloud\.com\/app_logs$,REJECT
 DOMAIN-SUFFIX,shenbabao.com,REJECT
 DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
-# DOMAIN-KEYWORD,umeng,REJECT
+DOMAIN-SUFFIX,umeng.com,REJECT
 # DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
 # DOMAIN-SUFFIX,pinduoduo.com,REJECT
 # URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT
