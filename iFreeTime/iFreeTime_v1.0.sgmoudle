@@ -1,5 +1,5 @@
 #!name=爱阅三秒跳广告
-#!desc="卡广告领奖励,请开启MITM或者HTTPS解密(更新日期:2022.11.26)"
+#!desc="卡广告领奖励,请开启MITM或者HTTPS解密(更新日期:2022.11.27)"
 [Rule]
 DOMAIN-SUFFIX,bytedance.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
@@ -35,7 +35,7 @@ DOMAIN-SUFFIX,snssdk.com,REJECT
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/settings\/?.+ - reject
 # ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads\/\?.+ - reject
 # pinduoduo
-^http:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
+^http?:\/\/.+\.pinduoduo\.com\/marketing_api\/.+\/.+\.(png|jpeg|jpg|mp4) - reject
 # google
 ^https?:\/\/googleads\..+\.doubleclick\.net\/mads\/static\/mad\/sdk\/native\/.+\.js - reject
 ^https?:\/\/.+\.googleadservices\.com\/pagead\/.+\?.+ - reject
