@@ -1,5 +1,5 @@
 #!name=爱阅三秒跳广告
-#!desc="卡广告领奖励,请开启MITM或者HTTPS解密(更新日期:2022.11.27)"
+#!desc="卡广告领奖励,请开启MITM或者HTTPS解密(更新日期:2022.11.27 v2)"
 [Rule]
 DOMAIN-SUFFIX,bytedance.com,REJECT
 DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
