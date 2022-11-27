@@ -1,0 +1,20 @@
+#!name=爱阅书香卡广告
+#!desc=大唐第一萌萌特供版，由DonSofried大佬提供
+
+[Rule]
+# > iFreeTime
+URL-REGEX,^https:\/\/images\.pinduoduo\.com\/marketing_api\/2022-11-27\/cea33681-ceac-4973-bca7-93b1d33332e5\.jpeg$,REJECT // Added for: https://images.pinduoduo.com/marketing_api/2022-11-27/cea33681-ceac-4973-bca7-93b1d33332e5.jpeg
+URL-REGEX,^https:\/\/images\.pinduoduo\.com\/marketing_api\/2021-12-07\/75e432f4aff78d8644f140fede95ab39\.mp4$,REJECT // Added for: https://images.pinduoduo.com/marketing_api/2021-12-07/75e432f4aff78d8644f140fede95ab39.mp4
+DOMAIN-SUFFIX,googlevideo.com,REJECT // Added for: https://rr4---sn-i3b7kns6.googlevideo.com/videoplayback?expire=1669557418&ei=KvyCY-nHMteA2roPvZCxiAQ&ip=194.99.79.248&id=85485dfa4c11aac7&itag=22&source=youtube&requiressl=yes&mh=6E&mm=31&mn=sn-i3b7kns6&ms=au&mv=m&mvi=4&pl=24&susc=gvp&acao=yes&ctier=L&mime=video%2Fmp4&vprv=1&dur=36.316&lmt=1662204414548371&mt=1669528167&txp=6318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Csusc%2Cacao%2Cctier%2Cmime%2Cvprv%2Cdur%2Clmt&sig=AOq0QJ8wRQIgS_5c3pI_I-PU4aiqMR450H6rFObYQ1ehdLTQbXxGX8MCIQDWVM7YBU433i2otO0T23tFhGSKvQzBKwDg58C1iC7Ipg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl&lsig=AG3C_xAwRAIgHwa1OXj7W7thHjUZ22ZazH__tRZB7SlKEKB8DdAV_b8CIDeczIpKC9Fn9J4eFNRWWUs6CQGGnH5SnNyeTIxu__qL&cpn=odzw2muX3OGbmVcW&ic=gmasdk
+DOMAIN,mssdk-bu.bytedance.com,REJECT // Added for: mssdk-bu.bytedance.com:443
+URL-REGEX,^https:\/\/alogs\.umeng\.com\/app_logs$,REJECT // Added for: https://alogs.umeng.com/app_logs
+URL-REGEX,^https:\/\/app-measurement\.com\/a$,REJECT // Added for: https://app-measurement.com/a
+URL-REGEX,^https:\/\/log-api\.pangolin-sdk-toutiao-b\.com\/service\/2\/app_log\/\?aid=5000546&version_code=4\.2\.5\.0&device_platform=iphone$,REJECT // Added for: https://log-api.pangolin-sdk-toutiao-b.com/service/2/app_log/?aid=5000546&version_code=4.2.5.0&device_platform=iphone
+DOMAIN-SUFFIX,digitalcertvalidation.com,REJECT // Added for: http://statuse.digitalcertvalidation.com/ME8wTTBLMEkwRzAHBgUrDgMCGgQUSaxdMWAOPYwtw%2FN34AxnrGlJMyEEFH%2FTmfOgRw4xAFZWIo63zJ7dygGKAhALU0tDKqzImtY3lWxetEgP
+DOMAIN,video-dsp.pddpic.com,REJECT // Added for: video-dsp.pddpic.com:443
+DOMAIN,adim.pinduoduo.com,REJECT // Added for: adim.pinduoduo.com:443
+DOMAIN-SUFFIX,ocsp.pki.goog,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+
+[MITM]
+hostname = app-measurement.com:443, alogs.umeng.com:443, log-api.pangolin-sdk-toutiao-b.com:443, ether-pack.pangolin-sdk-toutiao.com:443, pinduoduo.com
