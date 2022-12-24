@@ -13,8 +13,8 @@
 
 如果有不能用的小伙伴，请跳回之前的版本看脸刷，
 
-第一版 [*iFreeTime-First*](https://github.com/Space-Loon/mineself/blob/b87c0a0f629349b9a39b66e35f52b4a2b3fc2bae/iFreeTime/iFreeTime-First.sgmoudle)
+第一版 [*iFreeTime-First*](https://raw.githubusercontent.com/Space-Loon/mineself/main/iFreeTime/iFreeTime-First.sgmoudle)
 
-第二版 iFreeTime-Second
+第二版 [*iFreeTime-Second*](https://raw.githubusercontent.com/Space-Loon/mineself/main/iFreeTime/iFreeTime-second.sgmoudle)
 
-第三版 iFreeTime_v1.0   (目前最新版)
+第三版 [*iFreeTime_v1.0   (目前最新版)*](https://raw.githubusercontent.com/Space-Loon/mineself/main/iFreeTime/iFreeTime_v1.0.sgmoudle)
