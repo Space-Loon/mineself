@@ -1,0 +1,231 @@
+# 本配置的节点筛选是按照自用Sub-Store筛选后的订阅节点
+# clash的P核采用RE2正则引擎，不支持断言(?!),具体参照https://github.com/google/re2/wiki/Syntax
+# 任何采用此配置的人，请根据自己的需求，按照注释修改、删除或增加
+
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+# --------------------------------------
+
+# 节点订阅 并筛选(若有多个订阅连接，只需要复制一组放在下方修改该名称和路径里的文件名称即可)
+proxy-providers:
+ all:
+   type: http #http是线上订阅模式file是本地节点模式
+   path: ./profiles/proxies/all.yaml #线上订阅可以不用管，本地订阅需要将节点放到此路径(路径为存放配置文件的地方)
+   url: clash订阅节点
+   interval: 3600 #更新间隔时间单位:小时
+   health-check: #连通性测试
+     enable: true #开启或者关闭true or false
+     url: http://www.gstatic.com/generate_204 #测速网址可以不用改
+     interval: 300 #测速间隔时间单位:秒
+  
+# 策略组
+proxy-groups:
+  - name: 👆 手动选择
+    type: select
+    proxies:
+      - DIRECT
+    use: #引入proxy-provider
+      - all
+
+  - name: 🇸🇬 新加坡故障转移
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 3600 #测速间隔 单位:秒
+    filter: '(🪄|🍊|☁️) 新加坡' #正则筛选节点
+    use:
+      - all
+  
+  - name: 🐲 国内直连
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 💬 WhatsApp
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300 #测速间隔 单位:秒
+    filter: '🐻 新加坡'
+    use:
+      - all
+
+  - name: 🤖 GPT
+    type: select
+    filter: '🪄 美国'
+    use:
+      - all
+  
+  - name: 📎 微软服务
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - DIRECT
+
+  - name: 🎞 奈飞影视
+    type: select
+    filter: '(🪄|🍊|☁️) (香港|新加坡|台湾)'
+    use:
+      - all
+
+  - name: 🏰 迪士尼影视
+    type: select
+    filter: '(🪄|🍊|☁️) (香港|新加坡|台湾)'
+    use:
+      - all
+  
+  - name: 📺 油管
+    type: load-balance
+    filter: '(🪄|🍊|☁️) 香港'
+    use:
+      - all
+    interval: 300
+    strategy: consistent-hashing # or round-robin 前者为散列后者为轮询,两者差别详情查看YouTube不良林的视频
+
+  - name: 📔 Notion
+    type: select
+    proxies:
+      - DIRECT
+    
+  - name: 🛐 Telegram
+    type: select
+    proxies:
+      - 👆 手动选择
+      - 🇸🇬 新加坡故障转移
+  
+  - name: 🕹 游戏平台
+    type: select
+    proxies:
+      - DIRECT
+      - 👆 手动选择
+  
+  - name: 🛃 海外汇总
+    type: select
+    proxies:
+      - 👆 手动选择
+      - 🇸🇬 新加坡故障转移
+  
+  - name: 🔚 漏网之鱼
+    type: select
+    proxies:
+      - 👆 手动选择
+      - 🇸🇬 新加坡故障转移
+
+# 规则订阅
+rule-providers:
+  WhatsApp:
+    behavior: classical # domain(仅域名), ipcidr(仅IP) or classical(常规即混合域名和IP，常用这个模式)
+    type: http #可填写http及file「在线文件填写http，本地文件填写file」
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Whatsapp/Whatsapp.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Whatsapp.yaml
+  OpenAI:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
+    interval: 3600
+    path: ./profiles/proxies/OpenAI.yaml
+  Bing:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Bing.yaml
+  Microsoft:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Microsoft.yaml
+  BiliBili:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml"
+    interval: 3600
+    path: ./profiles/proxies/BiliBili.yaml
+  BiliBiliIntl:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBiliIntl/BiliBiliIntl.yaml"
+    interval: 3600
+    path: ./profiles/proxies/BiliBiliIntl.yaml
+  Netflix:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Netflix.yaml
+  Disney:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Disney.yaml
+  YouTube:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+    interval: 3600
+    path: ./profiles/proxies/YouTube.yaml
+  Telegram:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Telegram.yaml
+  Epic:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Epic.yaml
+  Steam:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Steam.yaml
+  Notion:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Notion/Notion.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Notion.yaml
+  Global_Classical:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Classical.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Global_Classical.yaml
+  GlobalMedia:
+    behavior: classical
+    type: http
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml"
+    interval: 3600
+    path: ./profiles/proxies/GlobalMedia.yaml
+
+# 分流规则
+rules:
+  - RULE-SET,WhatsApp,💬 WhatsApp
+  - RULE-SET,OpenAI,🤖 GPT
+  - RULE-SET,Bing,🤖 GPT
+  - RULE-SET,Microsoft,📎 微软服务
+  - RULE-SET,BiliBili,📺 哔哩哔哩
+  - RULE-SET,BiliBiliIntl,📺 哔哩哔哩
+  - RULE-SET,Netflix,🎞 奈飞影视
+  - RULE-SET,Disney,🏰 迪士尼影视
+  - RULE-SET,YouTube,📺 油管
+  - RULE-SET,Telegram,🛐 Telegram
+  - RULE-SET,Epic,🕹 游戏平台
+  - RULE-SET,Steam,🕹 游戏平台
+  - RULE-SET,Notion,📔 Notion
+  - RULE-SET,Global_Classical,🛃 海外汇总
+  - RULE-SET,GlobalMedia,🛃 海外汇总
+  - GEOIP,CN,DIRECT
+  - MATCH,🔚 漏网之鱼
