@@ -212,20 +212,20 @@ rule-providers:
 
 # 分流规则
 rules:
-  - RULE-SET,WhatsApp,💬 WhatsApp
-  - RULE-SET,OpenAI,🤖 GPT
-  - RULE-SET,Bing,🤖 GPT
-  - RULE-SET,Microsoft,📎 微软服务
-  - RULE-SET,BiliBili,📺 哔哩哔哩
-  - RULE-SET,BiliBiliIntl,📺 哔哩哔哩
-  - RULE-SET,Netflix,🎞 奈飞影视
-  - RULE-SET,Disney,🏰 迪士尼影视
-  - RULE-SET,YouTube,📺 油管
-  - RULE-SET,Telegram,🛐 Telegram
-  - RULE-SET,Epic,🕹 游戏平台
-  - RULE-SET,Steam,🕹 游戏平台
-  - RULE-SET,Notion,📔 Notion
-  - RULE-SET,Global_Classical,🛃 海外汇总
-  - RULE-SET,GlobalMedia,🛃 海外汇总
+  - RULE-SET,WhatsApp,💬 WhatsApp,no-resolve
+  - RULE-SET,OpenAI,🤖 GPT,no-resolve
+  - RULE-SET,Bing,🤖 GPT,no-resolve
+  - RULE-SET,Microsoft,📎 微软服务,no-resolve
+  - RULE-SET,BiliBili,📺 哔哩哔哩,no-resolve
+  - RULE-SET,BiliBiliIntl,📺 哔哩哔哩,no-resolve
+  - RULE-SET,Netflix,🎞 奈飞影视,no-resolve
+  - RULE-SET,Disney,🏰 迪士尼影视,no-resolve
+  - RULE-SET,YouTube,📺 油管,no-resolve
+  - RULE-SET,Telegram,🛐 Telegram,no-resolve
+  - RULE-SET,Epic,🕹 游戏平台,no-resolve
+  - RULE-SET,Steam,🕹 游戏平台,no-resolve
+  - RULE-SET,Notion,📔 Notion,no-resolve
+  - RULE-SET,Global_Classical,🛃 海外汇总,no-resolve
+  - RULE-SET,GlobalMedia,🛃 海外汇总,no-resolve
   - GEOIP,CN,DIRECT
   - MATCH,🔚 漏网之鱼
