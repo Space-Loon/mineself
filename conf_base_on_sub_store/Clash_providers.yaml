@@ -22,7 +22,7 @@ proxy-providers:
      url: http://www.gstatic.com/generate_204 #测速网址可以不用改
      interval: 300 #测速间隔时间单位:秒
   
-# 策略组
+# 策略组/正则筛选节点
 proxy-groups:
   - name: 👆 手动选择
     type: select
