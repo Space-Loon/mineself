@@ -202,7 +202,7 @@ rule-providers:
   Discord:
     behavior: classical
     type: http
-    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml"
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml"
     interval: 3600
     path: ./profiles/proxies/Discord.yaml
   Notion:
