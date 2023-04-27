@@ -32,12 +32,13 @@ proxy-groups:
       - all
 
   - name: 🇸🇬 新加坡故障转移
-    type: url-test
+    type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 3600 #测速间隔 单位:秒
     filter: '(🪄|🍊|☁️) 新加坡' #正则筛选节点
     use:
       - all
+    strategy: consistent-hashing # or round-robin
   
   - name: 🐲 国内直连
     type: select
@@ -82,6 +83,7 @@ proxy-groups:
   
   - name: 📺 油管
     type: load-balance
+    url: http://www.gstatic.com/generate_204
     filter: '(🪄|🍊|☁️) 香港'
     use:
       - all
@@ -98,6 +100,12 @@ proxy-groups:
     proxies:
       - 👆 手动选择
       - 🇸🇬 新加坡故障转移
+  
+  - name: 📟 Discord
+    type: select
+    use:
+      - all
+    filter: '(🪄|🍊|☁️) 新加坡'
   
   - name: 🕹 游戏平台
     type: select
@@ -191,6 +199,12 @@ rule-providers:
     url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml"
     interval: 3600
     path: ./profiles/proxies/Steam.yaml
+  Discord:
+    behavior: classical
+    type: http
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml"
+    interval: 3600
+    path: ./profiles/proxies/Discord.yaml
   Notion:
     behavior: classical
     type: http
@@ -224,6 +238,7 @@ rules:
   - RULE-SET,Telegram,🛐 Telegram,no-resolve
   - RULE-SET,Epic,🕹 游戏平台,no-resolve
   - RULE-SET,Steam,🕹 游戏平台,no-resolve
+  - RULE-SET,Discord,📟 Discord,no-resolve
   - RULE-SET,Notion,📔 Notion,no-resolve
   - RULE-SET,Global_Classical,🛃 海外汇总,no-resolve
   - RULE-SET,GlobalMedia,🛃 海外汇总,no-resolve
