@@ -35,10 +35,10 @@ proxy-groups:
     type: load-balance
     url: http://www.gstatic.com/generate_204
     interval: 3600 #测速间隔 单位:秒
-    filter: '(🪄|🍊|☁️) 新加坡' #正则筛选节点
+    filter: '(☁️|🍊|🪄|☕️) 新加坡' #正则筛选节点
     use:
       - all
-    strategy: consistent-hashing # or round-robin
+    strategy: consistent-hashing # or round-robin 前者为散列后者为轮询,两者差别详情查看YouTube不良林的视频
   
   - name: 🐲 国内直连
     type: select
@@ -71,24 +71,23 @@ proxy-groups:
 
   - name: 🎞 奈飞影视
     type: select
-    filter: '(🪄|🍊|☁️) (香港|新加坡|台湾)'
+    filter: '(🪄|🍊|☁️|☕️) (香港|新加坡|台湾)'
     use:
       - all
 
   - name: 🏰 迪士尼影视
     type: select
-    filter: '(🪄|🍊|☁️) (香港|新加坡|台湾)'
+    filter: '(🪄|🍊|☁️|☕️) (香港|新加坡|台湾)'
     use:
       - all
   
   - name: 📺 油管
-    type: load-balance
+    type: url-test
     url: http://www.gstatic.com/generate_204
-    filter: '(🪄|🍊|☁️) 香港'
+    filter: '(🪄|🍊|☁️|☕️) 香港'
     use:
       - all
     interval: 300
-    strategy: consistent-hashing # or round-robin 前者为散列后者为轮询,两者差别详情查看YouTube不良林的视频
 
   - name: 📔 Notion
     type: select
@@ -105,7 +104,7 @@ proxy-groups:
     type: select
     use:
       - all
-    filter: '(🪄|🍊|☁️) 新加坡'
+    filter: '(🪄|🍊|☁️|☕️) 新加坡'
   
   - name: 🕹 游戏平台
     type: select
