@@ -2,8 +2,11 @@
 # clash的P核采用RE2正则引擎，不支持断言(?!),具体参照https://github.com/google/re2/wiki/Syntax
 # 任何采用此配置的人，请根据自己的需求，按照注释修改、删除或增加
 
+# http 端口
 port: 7890
+# Sock 5 端口
 socks-port: 7891
+# 局域网代理共享
 allow-lan: true
 mode: Rule
 log-level: info
