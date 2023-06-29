@@ -101,8 +101,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - all
-    filter: '(🪄|🍊|☁️|☕️) 新加坡'
+      - 👆 手动选择
    
   - name: 🛐 Telegram
     type: select
