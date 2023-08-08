@@ -58,7 +58,7 @@ proxy-groups:
 
   - name: 🤖 GPT
     type: select
-    filter: '🪄 美国'
+    filter: '(🪄|☕️) 美国'
     use:
       - all
   
