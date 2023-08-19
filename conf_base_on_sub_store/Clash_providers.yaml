@@ -66,6 +66,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - 👆 手动选择
 
   - name: 📺 哔哩哔哩
     type: select
