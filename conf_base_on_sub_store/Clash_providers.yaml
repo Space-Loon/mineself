@@ -244,6 +244,7 @@ rules:
   - RULE-SET,WhatsApp,💬 WhatsApp,no-resolve
   - RULE-SET,OpenAI,🤖 GPT,no-resolve
   - RULE-SET,Bing,🤖 GPT,no-resolve
+  - RULE-SET,OneDrive,↕️ OneDrive,no-resolve
   - RULE-SET,Microsoft,📎 微软服务,no-resolve
   - RULE-SET,BiliBili,📺 哔哩哔哩,no-resolve
   - RULE-SET,BiliBiliIntl,📺 哔哩哔哩,no-resolve
@@ -255,7 +256,6 @@ rules:
   - RULE-SET,Steam,🕹 游戏平台,no-resolve
   - RULE-SET,Discord,📟 Discord,no-resolve
   - RULE-SET,Notion,📔 Notion,no-resolve
-  - RULE-SET,OneDrive,↕️ OneDrive,no-resolve
   - RULE-SET,Global_Classical,🛃 海外汇总,no-resolve
   - RULE-SET,GlobalMedia,🛃 海外汇总,no-resolve
   - GEOIP,CN,DIRECT
