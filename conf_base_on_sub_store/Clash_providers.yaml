@@ -18,7 +18,7 @@ proxy-providers:
  all:
    type: http #http是线上订阅模式file是本地节点模式
    path: ./profiles/proxies/all.yaml #线上订阅可以不用管，本地订阅需要将节点放到此路径(路径为存放配置文件的地方)
-   url: clash订阅节点
+   url: #在井号前粘贴clash订阅节点，注意不要将冒号后的空格覆盖掉
    interval: 3600 #更新间隔时间单位:小时
    health-check: #连通性测试
      enable: true #开启或者关闭true or false
